@@ -1,0 +1,110 @@
+<ion-header>
+	<ion-navbar>
+		<div class="row">
+			<table width="100%">
+				<tr>
+					<td width="33%" align="left">
+						<button ion-button menuToggle>
+							<ion-icon name="menu"></ion-icon>
+						</button>
+					</td>
+					<td width="33%" align="center">
+						<div style="font-size: 17px;" >What's Poppin?</div>
+					</td>
+					<td width="33%" align="right">
+						<button small ion-button round icon-only (click)="openModal()">
+							<ion-icon name="help"></ion-icon>
+						</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+
+
+        <ion-card id="card0">
+          <ion-card-content>
+            <div class = "row">
+              <h1 id="cardtitle" align="right">Cookies for Clothes</h1>
+            </div>
+            <div class="row">
+              <table width="100%">
+                <tr>
+                  <td width="33%" align="left">
+                    <h2 id = "timeEvent0">11:00am</h2>
+                  </td>
+                  <td width="40%" align="right" style="font-size: 20px;">
+                    <ion-icon padding-left item-right name= "contacts">
+                      <h3 id='count' class="no-break" style="padding-left:5px;">3</h3>
+                    </ion-icon>
+                  </td>
+                  <td width="33%" align="right">
+                    <div class="item item-button-right">
+                      <button id='btn' ion-button item-right [color]="ionicNamedColor" (click)='buttonClick();' >Pop?
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <div text-wrap class = "item item-divider" style="width:100%;">
+                <ion-item  *ngFor="let d of data" >
+                  <ion-icon name = "arrow-down" color="primary" item-left (click)="toggleDetails(d)"></ion-icon>
+                  {{d.title}}
+                  <div *ngIf="d.showDetails">
+					<div><strong>LOCATION: </strong>{{d.loc}}</div>
+					<div><strong>DESCRIPTION: </strong>{{d.details}}</div>
+					<div><strong>COST: </strong>{{d.cost}}</div>
+				  </div>
+                </ion-item>
+              </div>
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+
+
+        <ion-card id="card1">
+          <ion-card-content>
+            <div class = "row">
+              <h1 id="cardtitle" align="right">Field Hockey Game</h1>
+            </div>
+            <div class="row">
+              <table width="100%">
+                <tr>
+                  <td width="33%" align="left">
+                    <h2 id = "timeEvent0">04:30pm</h2>
+                  </td>
+                  <td width="40%" align="right" style="font-size: 20px;">
+                    <ion-icon padding-left item-right name= "contacts">
+                      <h3 id='count1' class="no-break" style="padding-left:5px;">46</h3>
+                    </ion-icon>
+                  </td>
+                  <td width="33%" align="right">
+                    <div class="item item-button-right">
+                      <button id='btn1' ion-button item-right [color]="ionicNamedColor1" (click)='buttonClick1();' >Pop?
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <div text-wrap class = "item item-divider" style="width:100%;">
+                <ion-item  *ngFor="let d of data1" >
+                  <ion-icon name = "arrow-down" color="primary" item-left  (click)="toggleDetails(d)"></ion-icon>
+                  {{d.title}}
+                  <div *ngIf="d.showDetails">
+					<div><strong>LOCATION: </strong>{{d.loc}}</div>
+					<div><strong>DESCRIPTION: </strong>{{d.details}}</div>
+					<div><strong>COST: </strong>{{d.cost}}</div>
+				  </div>
+                </ion-item>
+              </div>
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+	</ion-list>
+</ion-content>

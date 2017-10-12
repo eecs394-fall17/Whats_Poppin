@@ -1,0 +1,29 @@
+page-tomorrow {
+  $font-stack:    Helvetica, sans-serif;
+  $primary-color: #333;
+
+  ion-card-header{
+
+    font: 100% $font-stack;
+    color: $primary-color;
+    font-size: 100px;
+
+  }
+
+  #cardtitle {
+    float: right;
+    width: 100%;
+  }
+  .no-break {
+    display: inline;
+  }
+
+  #count, #count1 {
+  	font: 75% $font-stack;
+    }
+
+    #timeEvent0, #timeEvent1 {
+        font: 135% $font-stack;
+        }
+
+}

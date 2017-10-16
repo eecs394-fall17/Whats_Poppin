@@ -1,0 +1,28 @@
+page-Day4 {
+
+  $font-stack:    Helvetica, sans-serif;
+  $primary-color: #333;
+
+  ion-card-header{
+    font: 100% $font-stack;
+    color: $primary-color;
+    font-size: 100px;
+  }
+
+  #cardtitle {
+    float: right;
+    width: 100%;
+  }
+  .no-break {
+    display: inline;
+  }
+
+  #count, #count1, #count2, #count3, #count4, #count5, #count6, {
+    font: 75% $font-stack;
+  }
+
+  #timeEvent0, #timeEvent1,  #timeEvent2, #timeEvent3, #timeEvent4, #timeEvent5, #timeEvent6 {
+    font: 135% $font-stack;
+  }
+
+}

@@ -3,12 +3,12 @@ import { NavController, ModalController } from 'ionic-angular';
 import { HelpModalPage } from '../help-modal/help-modal';
 
 @Component({
-selector: 'page-today',
-templateUrl: 'today.html'
+selector: 'page-Day4',
+templateUrl: 'Day4.html'
 })
 
 
-export class TodayPage {
+export class Day4Page {
 
 data: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data1: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];

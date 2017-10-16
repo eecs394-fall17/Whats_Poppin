@@ -6,6 +6,9 @@ import { MyApp } from './app.component';
 import { TodayPage } from '../pages/today/today';
 import { TomorrowPage } from '../pages/tomorrow/tomorrow';
 import { HelpModalPage } from '../pages/help-modal/help-modal';
+import { Day3Page } from '../pages/Day3/Day3';
+import { Day4Page } from '../pages/Day4/Day4';
+import { Day5Page } from '../pages/Day5/Day5';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -16,7 +19,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     TodayPage,
     TomorrowPage,
-	HelpModalPage,
+    Day3Page,
+    Day4Page,
+    Day5Page,
+	  HelpModalPage,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     TodayPage,
     TomorrowPage,
-	HelpModalPage
+    Day3Page,
+    Day4Page,
+    Day5Page,
+	  HelpModalPage
   ],
   providers: [
     StatusBar,

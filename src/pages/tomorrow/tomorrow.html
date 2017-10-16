@@ -5,16 +5,13 @@
 				<tr>
 					<td width="33%" align="left">
 						<button ion-button menuToggle>
-							<ion-icon name="menu"></ion-icon>
+							<ion-icon color="primary" name="menu"></ion-icon>10/18
 						</button>
 					</td>
 					<td width="33%" align="center">
 						<div style="font-size: 17px;" >What's Poppin?</div>
 					</td>
 					<td width="33%" align="right">
-						<button small ion-button round icon-only (click)="openModal()">
-							<ion-icon name="help"></ion-icon>
-						</button>
 					</td>
 				</tr>
 			</table>
@@ -23,9 +20,25 @@
 </ion-header>
 
 <ion-content padding>
+
+
+		<ion-card id="cardhelp">
+			<ion-card-content align="center" >
+				<h1 class="no-break">What's</h1>
+				<button ion-button  color="secondary" >Poppin'
+				</button>
+				<h1 class="no-break" >in your</h1>
+				<button ion-button  color="light" >Pop?
+				</button>
+				<h1  class="no-break">ulation?</h1>
+				<div align="right">
+					<button ion-button (click)="openModal()">
+						Confused?
+					</button>
+				</div>
+			</ion-card-content>
+		</ion-card>
 	<ion-list>
-
-
         <ion-card id="card0">
           <ion-card-content>
             <div class = "row">

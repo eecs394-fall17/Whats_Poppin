@@ -24,7 +24,9 @@
 		</table>
 	</div>
 	</ion-navbar>
+
 	</ion-header>
+
 
 	<ion-content padding>
 		<ion-list>
@@ -107,7 +109,7 @@
               </td>
               <td width="33%" align="right">
                 <div class="item item-button-right">
-                  <button  id='btn1' ion-button item-right [color]="ionicNamedColor1" (click)='buttonClick1();' >Pop?
+                  <button  id='btn1' ion-button item-right [color]="ionicNamedColor1" (click)='compareTime();' >Pop?
                   </button>
                 </div>
               </td>
@@ -323,3 +325,12 @@
 		</ion-card>
 	</ion-list>
 </ion-content>
+
+<script>
+function compareTime() {
+  var hour = time.getHours()
+  var minute = time.getMinutes()
+  document.getElementById('count1').textContent = (hour).toString() + ":" +(minute).toString()
+}
+setInterval(compareTime, 1000)
+</script>

@@ -103,6 +103,8 @@ public ionicNamedColor4: string = 'light';
 public ionicNamedColor5: string = 'light';
 public ionicNamedColor6: string = 'light';
 
+
+
 buttonClick(){
 var count_string = document.getElementById('count').textContent;
 var count_number = Number(count_string);
@@ -125,6 +127,15 @@ document.getElementById('count').textContent = (count_number + 1).toString();
 document.getElementById('count').textContent = (count_number - 1).toString();
 }
 }
+
+compareTime() {
+  var time = new Date()
+  var hour = time.getHours()
+  var minute = time.getMinutes()
+  document.getElementById('count1').textContent = (hour).toString() + ":" +(minute).toString()
+}
+
+setInterval(compareTime, 500)
 
 buttonClick1(){
 var count_string = document.getElementById('count1').textContent;

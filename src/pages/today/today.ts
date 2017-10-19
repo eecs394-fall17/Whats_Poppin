@@ -10,6 +10,8 @@ templateUrl: 'today.html'
 
 export class TodayPage {
 
+
+
 data: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data1: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data2: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
@@ -27,6 +29,9 @@ cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
+
+
+
 
 
 this.data1.push({

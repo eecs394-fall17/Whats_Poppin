@@ -35,10 +35,10 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Today', component: TodayPage },
-      { title: '10/18', component: TomorrowPage },
-      { title: '10/19', component: Day3Page },
-      { title: '10/20', component: Day4Page },
-      { title: '10/21', component: Day5Page },    ];
+      { title: '10/27', component: TomorrowPage },
+      { title: '10/28', component: Day3Page },
+      { title: '10/29', component: Day4Page },
+      { title: '10/30', component: Day5Page },    ];
   }
 
 

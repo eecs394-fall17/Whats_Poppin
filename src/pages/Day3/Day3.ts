@@ -21,8 +21,8 @@ data6: Array<{ details: string, loc: string, cost: string, icon: string, showDet
 
 constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
 this.data.push({
-details: 'The first round of Club Tennis Tryouts will be held at SPAC and last 3 hours. Please don\'t forget to bring proper shoes, a towel, and your water bottle!',
-loc: 'SPAC Indoor Tennis Courts',
+details: 'Feel free to come either watch or play in a completely student-run weekly ultimate frisbee group!',
+loc: 'Deering Meadow',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
@@ -30,7 +30,7 @@ showDetails: false
 
 
 this.data1.push({
-details: 'Mr.Smith will be hosting a creative writing workshop in Fisk 102. The theme is Halloween.',
+details: 'Mrs. Goldstein will be hosting weekly information sessions designed to teach curious students how to animate. These courses assume no prior animation experience',
 loc: 'Fisk 102',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
@@ -38,15 +38,15 @@ showDetails: false
 });
 
 this.data2.push({
-details: 'The Chinese Students Association is giving out free dumplings by the arch from 11am to 3pm in honor of the New Year.',
-loc: 'The Arch',
-cost: 'FREE!',
+details: 'The Indian Student Allicance will be hosting a festival to celebrate Diwali this year! There will be music, food, contests, and all sorts of fun!',
+loc: 'Norris',
+cost: '$10',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data3.push({
-details: 'Representatives from Microsoft headquarters will be available to answer questions and accept resumes from 12pm to 2pm in Tech LR4',
+details: 'Representatives from Apple headquarters will be available to answer questions and accept resumes from 12pm to 2pm in Tech LR4',
 loc: 'Tech LR4',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
@@ -54,25 +54,25 @@ showDetails: false
 });
 
 this.data4.push({
-details: 'NU Tutors is looking to hire more staff. Come to Annenberg Room 21 to hear more!',
-loc: 'Annenberg Room 21',
+details: 'Bienen is looking to hire more staff this year to handle event ushering. Come to Bienen Room 2-314 to hear more!',
+loc: 'Bienen Room 2-314',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data5.push({
-details: 'Northwestern\'s premiere all-male Acapella group will be performing their first show of 2017 tonight in the Norris Louis Room',
+details: 'Northwestern\'s premiere co-ed Acapella group will be performing their first show of 2017 tonight!',
 loc: 'Norris Great Room',
-cost: '$10',
+cost: '$15',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data6.push({
-details: 'Do you like improv? Do you like to laugh? Come checkout NSTV and meet individuals involved in improv groups on campus!',
+details: 'Join our annual screening/performance of Rocky Horror Picture Show! Come meet other students, eat great food, and create college memories you can talk about for the rest of your life!',
 loc: 'Ford ITW Room',
-cost: 'FREE!',
+cost: '$15!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });

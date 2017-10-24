@@ -11,6 +11,11 @@ export class TomorrowPage {
 
 data: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data1: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data2: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data3: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data4: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data5: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data6: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 
 
 
@@ -31,6 +36,47 @@ cost: '$10',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
+
+this.data2.push({
+	details: 'Women in Computing has invited the CME Group to conduct a tech talk on blockchain technologies! Please feel free to swing on by: resumes will be accepted at this event!',
+	loc: 'Tech LR5',
+	cost: 'FREE!',
+	icon: 'ios-add-circle-outline',
+	showDetails: false
+});
+
+this.data3.push({
+	details: 'Join seniors Theo Mavrakis and Joseph Lee as they complete their final recital of their college careers!',
+	loc: 'Bienen Auditorium',
+	cost: '$10',
+	icon: 'ios-add-circle-outline',
+	showDetails: false
+});
+
+this.data4.push({
+	details: 'Our students have worked especially hard this quarter to bring you one of, if not the most entertaining theatrical performace: Book of Mormon',
+	loc: 'Cahn Hall',
+	cost: '$15',
+	icon: 'ios-add-circle-outline',
+	showDetails: false
+});
+
+this.data5.push({
+	details: 'The Knight Lab has recently acquired some brand new sets of Oculus Rifts along with their touch controllers. Feel free to swing by our lab in Locy to give these bad boys a try!',
+	loc: 'Knight Lab in Locy',
+	cost: 'FREE!',
+	icon: 'ios-add-circle-outline',
+	showDetails: false
+});
+
+this.data6.push({
+	details: 'Join the Persian Students Association (PSA) to eat traditional Iranian kabobs! There will be a wide variety of different meats available in addition to vegetarian options. All contributions will be used to help children in Rwanda',
+	loc: 'Norris Great Room',
+	cost: '$10 per plate',
+	icon: 'ios-add-circle-outline',
+	showDetails: false
+});
+
 }
 
  toggleDetails(data) {

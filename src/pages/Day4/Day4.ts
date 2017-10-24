@@ -21,8 +21,8 @@ data6: Array<{ details: string, loc: string, cost: string, icon: string, showDet
 
 constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
 this.data.push({
-details: 'The first round of Club Tennis Tryouts will be held at SPAC and last 3 hours. Please don\'t forget to bring proper shoes, a towel, and your water bottle!',
-loc: 'SPAC Indoor Tennis Courts',
+details: 'Come cheer on the Wildcats as both our men\'s and women\'s club soccer teams are playing Notre Dame!',
+loc: 'Martin Stadium',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
@@ -30,23 +30,23 @@ showDetails: false
 
 
 this.data1.push({
-details: 'Mr.Smith will be hosting a creative writing workshop in Fisk 102. The theme is Halloween.',
-loc: 'Fisk 102',
+details: 'Mr. Peshkin will be hosting an open workshop for all students interested in learning how we use our observatory here on campus to make groundbreaking observations and predictions about celestial bodies!',
+loc: 'Dearborn Observatory',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data2.push({
-details: 'The Chinese Students Association is giving out free dumplings by the arch from 11am to 3pm in honor of the New Year.',
-loc: 'The Arch',
+details: 'This year we will be hosting the largest student-run Kwanzaa Festival in the country! Come by if you\'re interested in helping your fellow students prepare for our celebrations!',
+loc: 'Fisk 102',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data3.push({
-details: 'Representatives from Microsoft headquarters will be available to answer questions and accept resumes from 12pm to 2pm in Tech LR4',
+details: 'Representatives from Google headquarters will be available to answer questions and accept resumes from 12pm to 2pm in Tech LR4',
 loc: 'Tech LR4',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
@@ -54,7 +54,7 @@ showDetails: false
 });
 
 this.data4.push({
-details: 'NU Tutors is looking to hire more staff. Come to Annenberg Room 21 to hear more!',
+details: 'Ever wanted to be an RA? Swing on by to learn how to join our close-knit family and all about the awesome perks you\'ll receive!',
 loc: 'Annenberg Room 21',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
@@ -62,15 +62,15 @@ showDetails: false
 });
 
 this.data5.push({
-details: 'Northwestern\'s premiere all-male Acapella group will be performing their first show of 2017 tonight in the Norris Louis Room',
+details: 'Northwestern\'s secondary all-male Acapella group will be performing their first show of 2017 tonight!',
 loc: 'Norris Great Room',
-cost: '$10',
+cost: '$8',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data6.push({
-details: 'Do you like improv? Do you like to laugh? Come checkout NSTV and meet individuals involved in improv groups on campus!',
+details: 'Our Musical Theatre department is looking for students interested in learning how to compose pieces for performances. No prior composition experience necessary!',
 loc: 'Ford ITW Room',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',

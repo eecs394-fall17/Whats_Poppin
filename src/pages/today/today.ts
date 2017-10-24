@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { HelpModalPage } from '../help-modal/help-modal';
+import { FilterModalPage } from '../filter-modal/filter-modal';
 
 @Component({
 selector: 'page-today',
@@ -30,12 +31,8 @@ icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
-
-
-
-
 this.data1.push({
-details: 'Mr.Smith will be hosting a creative writing workshop in Fisk 102. The theme is Halloween.',
+details: 'Mr. Smith will be hosting a creative writing workshop in Fisk 102. The theme is Halloween.',
 loc: 'Fisk 102',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
@@ -96,7 +93,11 @@ data.icon = 'ios-remove-circle-outline';
 }
 
 openModal() {
-this.modalCtrl.create(HelpModalPage).present();
+	this.modalCtrl.create(HelpModalPage).present();
+}
+
+openFilter() {
+	this.modalCtrl.create(FilterModalPage).present();
 }
 
 public ionicNamedColor: string = 'light';

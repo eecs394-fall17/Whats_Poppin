@@ -21,8 +21,8 @@ data6: Array<{ details: string, loc: string, cost: string, icon: string, showDet
 
 constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
 this.data.push({
-details: 'The first round of Club Tennis Tryouts will be held at SPAC and last 3 hours. Please don\'t forget to bring proper shoes, a towel, and your water bottle!',
-loc: 'SPAC Indoor Tennis Courts',
+details: 'Come cheer on the Wildcats as our Club Squash teams face off against UChicago! Busses will be available and leave promptly at 09:00am from Plex',
+loc: 'Foster-Walker Complex',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
@@ -30,39 +30,39 @@ showDetails: false
 
 
 this.data1.push({
-details: 'Mr.Smith will be hosting a creative writing workshop in Fisk 102. The theme is Halloween.',
-loc: 'Fisk 102',
+details: 'Ever wonder how to make your own video game? All interested students should come hear Prof. Horswill\'s weekly lectures on the topic. Basic coding experience can be useful, but not required',
+loc: 'Tech LR2',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data2.push({
-details: 'The Chinese Students Association is giving out free dumplings by the arch from 11am to 3pm in honor of the New Year.',
-loc: 'The Arch',
-cost: 'FREE!',
-icon: 'ios-add-circle-outline',
-showDetails: false
-});
-
-this.data3.push({
-details: 'Representatives from Microsoft headquarters will be available to answer questions and accept resumes from 12pm to 2pm in Tech LR4',
+details: 'Ms. Yousafzai will enlighten us of the long journey she took in becoming a prominent activist for female education and a Nobel Prize laureate after she encountered difficulties with the Taliban',
 loc: 'Tech LR4',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
+this.data3.push({
+details: 'Representatives from United Airlines will be available to answer questions and accept resumes from 12pm to 2pm',
+loc: 'Tech Front Lobby',
+cost: 'FREE!',
+icon: 'ios-add-circle-outline',
+showDetails: false
+});
+
 this.data4.push({
-details: 'NU Tutors is looking to hire more staff. Come to Annenberg Room 21 to hear more!',
-loc: 'Annenberg Room 21',
+details: 'NUIT is looking to hire more staff. Please feel free to join our close-knit family and learn about our weekly tasks! No prior IT experience is required, though it certainly will be useful',
+loc: 'University Library Collab Zone',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data5.push({
-details: 'Northwestern\'s premiere all-male Acapella group will be performing their first show of 2017 tonight in the Norris Louis Room',
+details: 'Northwestern\'s oldest Acapella group will be performing their first show of 2017 tonight!',
 loc: 'Norris Great Room',
 cost: '$10',
 icon: 'ios-add-circle-outline',

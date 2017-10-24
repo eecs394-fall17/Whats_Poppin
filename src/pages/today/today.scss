@@ -25,6 +25,14 @@ page-today {
     font: 135% $font-stack;
   }
 
-
+  #grey {
+    opacity: 0.3;
+  }
+  
+  #filter {
+	background: none;
+	background-color: none;
+	box-shadow: none;
+  }
 
 }

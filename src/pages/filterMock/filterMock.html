@@ -1,0 +1,186 @@
+<ion-header>
+	<ion-navbar>
+		<div class="row">
+			<table width="100%">
+				<tr>
+					<td width="33%" align="left">
+						<button ion-button menuToggle>
+							<ion-icon name="menu" color="primary"></ion-icon>Today
+						</button>
+						<!-- <label style="font-size: 16px;" class = "item item-input item-select">
+							<select>
+								<option selected>Today</option>
+								<option>10/18</option>
+								<option>10/19</option>
+								<option>10/20</option>
+								<option>10/21</option>
+							</select>
+						</label> -->
+					</td>
+					<td width="33%" align="center" >
+						<div style="font-size: 17px;" >What's Poppin?</div>
+					</td>
+					<td width="33%" align="right">
+						<div> <button style="font-size: 17px;" ion-button id="filter" color="light" (click)="openFilter()">Filter
+							<ion-icon color="primary" style="padding-left:5px;" name="arrow-forward" ></ion-icon>
+						</button></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+
+		<ion-card id="card0">
+			<ion-card-content id="grey">
+				<div class = "row">
+					<h1 id="cardtitle" align="right">Club Tennis Tryouts</h1>
+				</div>
+				<div class="row">
+					<table width="100%">
+						<tr>
+							<td width="33%" align="left">
+								<h2 id = "timeEvent0">09:00am</h2>
+							</td>
+							<td width="40%" align="right" style="font-size: 20px;">
+								<ion-icon padding-left item-right name= "contacts">
+									<h3 id='count' class="no-break" style="padding-left:5px;">7</h3>
+								</ion-icon>
+							</td>
+							<td width="33%" align="right">
+								<div class="item item-button-right">
+									<button disabled=true id='btn' ion-button item-right [color]="ionicNamedColor" (click)='buttonClick();'>
+										Pop?
+									</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div text-wrap class = "item item-divider" style="width:100%;">
+						<ion-item  *ngFor="let d of data" >
+							<ion-icon name="arrow-down" color="primary" item-left (click)="toggleDetails(d)">
+							</ion-icon>
+							{{d.title}}
+							<div *ngIf="d.showDetails">
+								<strong>LOCATION: </strong><br/>
+								{{d.loc}}<br/>
+								<br/>
+								<strong>DESCRIPTION: </strong><br/>
+								{{d.details}}<br/>
+								<br/>
+								<div><strong>COST: </strong>{{d.cost}}</div>
+							</div>
+						</ion-item>
+					</div>
+				</div>
+			</ion-card-content>
+		</ion-card>
+
+
+		<ion-card id="cardhelp">
+			<ion-card-content align="center" >
+				<h1 style="font-size: 14px;" class="no-break">What's</h1>
+				<button ion-button small color="secondary" >Poppin'</button>
+				<h1 style="font-size: 14px;" class="no-break" >in your</h1>
+				<button ion-button small color="light" >Pop?</button>
+				<h1 style="font-size: 14px;" class="no-break">ulation?</h1>
+				<div align="center"><h1  style="font-size: 14px;" class="no-break">Confused?</h1>
+					<button small ion-button (click)="openModal()">
+						Click here
+					</button></div>
+			</ion-card-content>
+		</ion-card>
+
+		<ion-card id="card5">
+			<ion-card-content>
+				<div class = "row">
+					<h1 id="cardtitle" align="right">Asterik Acapella Show</h1>
+				</div>
+				<div class="row">
+					<table width="100%">
+						<tr>
+							<td width="33%" align="left">
+								<h2 id = "timeEvent5">07:00pm</h2>
+							</td>
+							<td width="40%" align="right" style="font-size: 20px;">
+								<ion-icon padding-left item-right name= "contacts">
+									<h3 id='count5' class="no-break" style="padding-left:5px;">49</h3>
+								</ion-icon>
+							</td>
+							<td width="33%" align="right">
+								<div class="item item-button-right">
+									<button  id='btn5' ion-button item-right [color]="ionicNamedColor5" (click)='buttonClick5();' >Pop?
+									</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div text-wrap class = "item item-divider" style="width:100%;">
+						<ion-item  *ngFor="let d of data5" >
+							<ion-icon name = "arrow-down" color="primary" item-left (click)="toggleDetails(d)">
+							</ion-icon>
+							{{d.title}}
+							<div *ngIf="d.showDetails">
+								<strong>LOCATION: </strong><br/>
+								{{d.loc}}<br/>
+								<br/>
+								<strong>DESCRIPTION: </strong><br/>
+								{{d.details}}<br/>
+								<br/>
+								<div><strong>COST: </strong>{{d.cost}}</div>
+							</div>
+						</ion-item>
+					</div>
+				</div>
+			</ion-card-content>
+		</ion-card>
+
+		<ion-card id="card6">
+			<ion-card-content>
+				<div class = "row">
+					<h1 id="cardtitle" align="right">Improv Titanic Show</h1>
+				</div>
+				<div class="row">
+					<table width="100%">
+						<tr>
+							<td width="33%" align="left">
+								<h2 id = "timeEvent6">09:00pm</h2>
+							</td>
+							<td width="40%" align="right" style="font-size: 20px;">
+								<ion-icon padding-left item-right name= "contacts">
+									<h3 id='count6' class="no-break" style="padding-left:5px;">31</h3>
+								</ion-icon>
+							</td>
+							<td width="33%" align="right">
+								<div class="item item-button-right">
+									<button id='btn6' ion-button item-right [color]="ionicNamedColor6" (click)='buttonClick6();' >Pop?
+									</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div text-wrap class = "item item-divider" style="width:100%;">
+						<ion-item  *ngFor="let d of data6" >
+							<ion-icon name = "arrow-down" color="primary" item-left  (click)="toggleDetails(d)">
+							</ion-icon>
+							{{d.title}}
+							<div *ngIf="d.showDetails">
+								<strong>LOCATION: </strong><br/>
+								{{d.loc}}<br/>
+								<br/>
+								<strong>DESCRIPTION: </strong><br/>
+								{{d.details}}<br/>
+								<br/>
+								<div><strong>COST: </strong>{{d.cost}}</div>
+							</div>
+						</ion-item>
+					</div>
+				</div>
+			</ion-card-content>
+		</ion-card>
+
+	</ion-list>
+</ion-content>

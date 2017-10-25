@@ -7,6 +7,7 @@ import { TodayPage } from '../pages/today/today';
 import { TomorrowPage } from '../pages/tomorrow/tomorrow';
 import { HelpModalPage } from '../pages/help-modal/help-modal';
 import { FilterModalPage } from '../pages/filter-modal/filter-modal';
+import { filterMockPage } from '../pages/filterMock/filterMock';
 import { Day3Page } from '../pages/Day3/Day3';
 import { Day4Page } from '../pages/Day4/Day4';
 import { Day5Page } from '../pages/Day5/Day5';
@@ -24,7 +25,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Day4Page,
     Day5Page,
 	HelpModalPage,
-	FilterModalPage
+	FilterModalPage,
+  filterMockPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Day4Page,
     Day5Page,
 	HelpModalPage,
-	FilterModalPage
+	FilterModalPage,
+  filterMockPage
   ],
   providers: [
     StatusBar,

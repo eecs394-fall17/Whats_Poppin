@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ViewController } from 'ionic-angular';
+import { ViewController, NavController } from 'ionic-angular';
+import { filterMockPage } from '../filterMock/filterMock';
 
 /**
  * Generated class for the FilterModalPage page.
@@ -26,11 +27,13 @@ export class FilterModalPage {
 
   }
 
-  constructor(private viewCtrl: ViewController) {
+  constructor(private viewCtrl: ViewController, public navCtrl: NavController) {
   }
 
   dismiss(data) {
-	this.viewCtrl.dismiss(data);
+	//this.viewCtrl.dismiss(data);
+  this.navCtrl.push(filterMockPage);
+
   }
 
   ionViewDidLoad() {

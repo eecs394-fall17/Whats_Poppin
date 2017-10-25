@@ -274,6 +274,51 @@
 					</button></div>
 			</ion-card-content>
 		</ion-card>
+		
+		<ion-card id="card9">
+			<ion-card-content>
+				<div class = "row">
+					<h1 id="cardtitle" align="right">Pickup Soccer Game</h1>
+				</div>
+				<div class="row">
+					<table width="100%">
+						<tr>
+							<td width="33%" align="left">
+								<h2 id = "timeEvent0">12:00pm</h2>
+							</td>
+							<td width="40%" align="right" style="font-size: 20px;">
+								<ion-icon padding-left item-right name= "contacts">
+									<h3 id='count' class="no-break" style="padding-left:5px;">7</h3>
+								</ion-icon>
+							</td>
+							<td width="33%" align="right">
+								<div class="item item-button-right">
+									<button id='btn' ion-button item-right [color]="ionicNamedColor" (click)='buttonClick();'>
+										Pop?
+									</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div text-wrap class = "item item-divider" style="width:100%;">
+						<ion-item  *ngFor="let d of data9" >
+							<ion-icon name="arrow-down" color="primary" item-left (click)="toggleDetails(d)">
+							</ion-icon>
+							{{d.title}}
+							<div *ngIf="d.showDetails">
+								<strong>LOCATION: </strong><br/>
+								{{d.loc}}<br/>
+								<br/>
+								<strong>DESCRIPTION: </strong><br/>
+								{{d.details}}<br/>
+								<br/>
+								<div><strong>COST: </strong>{{d.cost}}</div>
+							</div>
+						</ion-item>
+					</div>
+				</div>
+			</ion-card-content>
+		</ion-card>
 
 		<ion-card id="card3">
 			<ion-card-content>
@@ -315,50 +360,7 @@
 			</ion-card-content>
 		</ion-card>
 		
-		<ion-card id="card9">
-			<ion-card-content>
-				<div class = "row">
-					<h1 id="cardtitle" align="right">Pickup Soccer Game</h1>
-				</div>
-				<div class="row">
-					<table width="100%">
-						<tr>
-							<td width="33%" align="left">
-								<h2 id = "timeEvent0">03:00pm</h2>
-							</td>
-							<td width="40%" align="right" style="font-size: 20px;">
-								<ion-icon padding-left item-right name= "contacts">
-									<h3 id='count' class="no-break" style="padding-left:5px;">7</h3>
-								</ion-icon>
-							</td>
-							<td width="33%" align="right">
-								<div class="item item-button-right">
-									<button id='btn' ion-button item-right [color]="ionicNamedColor" (click)='buttonClick();'>
-										Pop?
-									</button>
-								</div>
-							</td>
-						</tr>
-					</table>
-					<div text-wrap class = "item item-divider" style="width:100%;">
-						<ion-item  *ngFor="let d of data9" >
-							<ion-icon name="arrow-down" color="primary" item-left (click)="toggleDetails(d)">
-							</ion-icon>
-							{{d.title}}
-							<div *ngIf="d.showDetails">
-								<strong>LOCATION: </strong><br/>
-								{{d.loc}}<br/>
-								<br/>
-								<strong>DESCRIPTION: </strong><br/>
-								{{d.details}}<br/>
-								<br/>
-								<div><strong>COST: </strong>{{d.cost}}</div>
-							</div>
-						</ion-item>
-					</div>
-				</div>
-			</ion-card-content>
-		</ion-card>
+		
 
 		<ion-card id="card4">
 			<ion-card-content>

@@ -20,6 +20,9 @@ data3: Array<{ details: string, loc: string, cost: string, icon: string, showDet
 data4: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data5: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data6: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data7: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data8: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data9: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 
 
 constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
@@ -74,6 +77,30 @@ showDetails: false
 this.data6.push({
 details: 'Do you like improv? Do you like to laugh? Come checkout NSTV and meet individuals involved in improv groups on campus!',
 loc: 'Ford ITW Room',
+cost: 'FREE!',
+icon: 'ios-add-circle-outline',
+showDetails: false
+});
+
+this.data7.push({
+details: 'Come face off against your fellow classmates in friendly basketball games!',
+loc: 'Bobb Hall',
+cost: 'FREE!',
+icon: 'ios-add-circle-outline',
+showDetails: false
+});
+
+this.data8.push({
+details: 'Join the best percussionists of Northwestern as they host their first show of 2017!',
+loc: 'Norris Basement',
+cost: '$15!',
+icon: 'ios-add-circle-outline',
+showDetails: false
+});
+
+this.data9.push({
+details: 'Come join us for a friendly game of soccer!',
+loc: 'Deering Meadow',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false

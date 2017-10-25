@@ -17,7 +17,6 @@ data: Array<{ details: string, loc: string, cost: string, icon: string, showDeta
 data1: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data2: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data3: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
-data4: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data5: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 data6: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 
@@ -32,32 +31,24 @@ showDetails: false
 });
 
 this.data1.push({
-details: 'Mr. Smith will be hosting a creative writing workshop in Fisk 102. The theme is Halloween.',
-loc: 'Fisk 102',
+details: 'Come face off against your fellow classmates in friendly basketball games!',
+loc: 'Bobb Hall',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data2.push({
-details: 'The Chinese Students Association is giving out free dumplings by the arch from 11am to 3pm in honor of the New Year.',
-loc: 'The Arch',
-cost: 'FREE!',
+details: 'Join the best percussionists of Northwestern as they host their first show of 2017!',
+loc: 'Norris Basement',
+cost: '$15!',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data3.push({
-details: 'Representatives from Microsoft headquarters will be available to answer questions and accept resumes from 12pm to 2pm in Tech LR4',
-loc: 'Tech LR4',
-cost: 'FREE!',
-icon: 'ios-add-circle-outline',
-showDetails: false
-});
-
-this.data4.push({
-details: 'NU Tutors is looking to hire more staff. Come to Annenberg Room 21 to hear more!',
-loc: 'Annenberg Room 21',
+details: 'Come join us for a friendly game of soccer!',
+loc: 'Deering Meadow',
 cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false

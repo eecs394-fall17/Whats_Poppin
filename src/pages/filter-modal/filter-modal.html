@@ -14,7 +14,47 @@
 
 
 <ion-content padding>
-	
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label >Sports</ion-label>
+      <ion-checkbox color="secondary" [(ngModel)]="sports" (ionChange)="update()" ></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Career</ion-label>
+      <ion-checkbox color="primary" [(ngModel)]="career" (ionChange)="update()" ></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Music</ion-label>
+      <ion-checkbox color="orange" [(ngModel)]="music" (ionChange)="update()" ></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Volunteer</ion-label>
+      <ion-checkbox color="danger" [(ngModel)]="volunteer" (ionChange)="update()"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Workshops</ion-label>
+      <ion-checkbox color="purple" [(ngModel)]="workshops" (ionChange)="update()"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Theatre</ion-label>
+      <ion-checkbox color="pink" [(ngModel)]="theatre" (ionChange)="update()"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cultural</ion-label>
+      <ion-checkbox color="dark" [(ngModel)]="cultural"></ion-checkbox>
+    </ion-item>
+
+
+  </ion-list>
+
 	<div class="row">
 		<table width="100%">
 			<tr>
@@ -24,5 +64,5 @@
 			</tr>
 		</table>
 	</div>
-	
+
 </ion-content>

@@ -14,9 +14,21 @@ import { ViewController } from 'ionic-angular';
 })
 export class FilterModalPage {
 
+  sports: boolean;
+  career: boolean;
+  music: boolean;
+  theatre: boolean;
+  workshops: boolean;
+  volunteer: boolean;
+  cultural: boolean;
+
+  update(){
+
+  }
+
   constructor(private viewCtrl: ViewController) {
   }
-  
+
   dismiss(data) {
 	this.viewCtrl.dismiss(data);
   }

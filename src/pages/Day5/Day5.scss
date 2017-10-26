@@ -24,5 +24,11 @@ page-Day5 {
   #timeEvent0, #timeEvent1,  #timeEvent2, #timeEvent3, #timeEvent4, #timeEvent5, #timeEvent6 {
     font: 135% $font-stack;
   }
+  
+  #filter {
+	background: none;
+	background-color: none;
+	box-shadow: none;
+  }
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { HelpModalPage } from '../help-modal/help-modal';
+import { FilterModalPage } from '../filter-modal/filter-modal';
 
 @Component({
 selector: 'page-tomorrow',
@@ -91,6 +92,10 @@ this.data6.push({
 
 openModal() {
 	this.modalCtrl.create(HelpModalPage).present();
+}
+
+openFilter() {
+	this.modalCtrl.create(FilterModalPage).present();
 }
 
 public ionicNamedColor: string = 'light';

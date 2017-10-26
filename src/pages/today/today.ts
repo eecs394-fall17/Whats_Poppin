@@ -134,6 +134,9 @@ public ionicNamedColor3: string = 'light';
 public ionicNamedColor4: string = 'light';
 public ionicNamedColor5: string = 'light';
 public ionicNamedColor6: string = 'light';
+public ionicNamedColor7: string = 'light';
+public ionicNamedColor8: string = 'light';
+public ionicNamedColor9: string = 'light';
 
 buttonClick(){
 var count_string = document.getElementById('count').textContent;
@@ -293,6 +296,75 @@ if (clicked == true){
 document.getElementById('count6').textContent = (count_number + 1).toString();
 }else{
 document.getElementById('count6').textContent = (count_number - 1).toString();
+}
+}
+
+buttonClick7(){
+var count_string = document.getElementById('count7').textContent;
+var count_number = Number(count_string);
+let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn7');
+
+if(this.ionicNamedColor7 == 'light') {
+this.ionicNamedColor7 = 'secondary';
+clicked = true;
+btn.innerHTML = 'Poppin\'';
+} else {
+this.ionicNamedColor7 = 'light';
+clicked = false;
+btn.innerHTML = 'Pop?';
+}
+
+if (clicked == true){
+document.getElementById('count7').textContent = (count_number + 1).toString();
+}else{
+document.getElementById('count7').textContent = (count_number - 1).toString();
+}
+}
+
+buttonClick8(){
+var count_string = document.getElementById('count8').textContent;
+var count_number = Number(count_string);
+let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn8');
+
+if(this.ionicNamedColor8 == 'light') {
+this.ionicNamedColor8 = 'secondary';
+clicked = true;
+btn.innerHTML = 'Poppin\'';
+} else {
+this.ionicNamedColor8 = 'light';
+clicked = false;
+btn.innerHTML = 'Pop?';
+}
+
+if (clicked == true){
+document.getElementById('count8').textContent = (count_number + 1).toString();
+}else{
+document.getElementById('count8').textContent = (count_number - 1).toString();
+}
+}
+
+buttonClick9(){
+var count_string = document.getElementById('count9').textContent;
+var count_number = Number(count_string);
+let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn9');
+
+if(this.ionicNamedColor9 == 'light') {
+this.ionicNamedColor9 = 'secondary';
+clicked = true;
+btn.innerHTML = 'Poppin\'';
+} else {
+this.ionicNamedColor9 = 'light';
+clicked = false;
+btn.innerHTML = 'Pop?';
+}
+
+if (clicked == true){
+document.getElementById('count9').textContent = (count_number + 1).toString();
+}else{
+document.getElementById('count9').textContent = (count_number - 1).toString();
 }
 }
 

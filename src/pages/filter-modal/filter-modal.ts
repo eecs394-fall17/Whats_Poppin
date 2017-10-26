@@ -29,10 +29,13 @@ export class FilterModalPage {
 
   constructor(private viewCtrl: ViewController, public navCtrl: NavController) {
   }
-
+  
   dismiss(data) {
-	//this.viewCtrl.dismiss(data);
-  this.navCtrl.push(filterMockPage);
+	this.viewCtrl.dismiss(data);
+  }
+
+  filter() {
+	this.navCtrl.push(filterMockPage);
 
   }
 
